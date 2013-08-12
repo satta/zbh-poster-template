@@ -1,0 +1,267 @@
+\ProvidesPackage{beamerinnerthemeGCB}
+
+\mode<presentation>
+
+\pgfdeclareimage[width=14pt,height=12pt]{beamericonbook}{beamericonbook}
+\pgfdeclareimage[width=14pt,height=12pt]{beamericonbookshaded}{beamericonbook.20}
+\pgfaliasimage{beamericonbook.!20opaque}{beamericonbookshaded}
+\pgfaliasimage{beamericonbook.!15opaque}{beamericonbookshaded}
+\pgfaliasimage{beamericonbook.!10opaque}{beamericonbookshaded}
+\pgfaliasimage{beamericonbook.!5opaque}{beamericonbookshaded}
+\pgfaliasimage{beamericonbook.!2opaque}{beamericonbookshaded}
+\pgfaliasimage{beamericonincollection.!20opaque}{beamericonbookshaded}
+\pgfaliasimage{beamericonincollection.!15opaque}{beamericonbookshaded}
+\pgfaliasimage{beamericonincollection.!10opaque}{beamericonbookshaded}
+\pgfaliasimage{beamericonincollection.!5opaque}{beamericonbookshaded}
+\pgfaliasimage{beamericonincollection.!2opaque}{beamericonbookshaded}
+\pgfdeclareimage[width=17pt,height=23pt]{beamericonarticle}{beamericonarticle}
+\pgfdeclareimage[width=17pt,height=23pt]{beamericonarticleshaded}{beamericonarticle.20}
+\pgfaliasimage{beamericonarticle.!20opaque}{beamericonarticleshaded}
+\pgfaliasimage{beamericonarticle.!15opaque}{beamericonarticleshaded}
+\pgfaliasimage{beamericonarticle.!10opaque}{beamericonarticleshaded}
+\pgfaliasimage{beamericonarticle.!5opaque}{beamericonarticleshaded}
+\pgfaliasimage{beamericonarticle.!2opaque}{beamericonarticleshaded}
+
+\setbeamertemplate{items}[circle]
+
+%\defbeamertemplate*{title page}{GCB}[1][]
+%{
+  %\vbox{}
+  %\vfill
+  %\begin{centering}
+    %\begin{beamercolorbox}[sep=8pt,center,#1]{title}
+      %\usebeamerfont{title}\inserttitle\par%
+      %\ifx\insertsubtitle\@empty%
+      %\else%
+        %\vskip0.25em%
+        %{\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
+      %\fi%
+    %\end{beamercolorbox}%
+    %\vskip1em\par
+    %\begin{beamercolorbox}[sep=8pt,center,#1]{author}
+      %\usebeamerfont{author}\insertauthor
+    %\end{beamercolorbox}
+    %\begin{beamercolorbox}[sep=8pt,center,#1]{institute}
+      %\usebeamerfont{institute}\insertinstitute
+    %\end{beamercolorbox}
+    %\begin{beamercolorbox}[sep=8pt,center,#1]{date}
+      %\usebeamerfont{date}\insertdate
+    %\end{beamercolorbox}\vskip0.5em
+    %{\usebeamercolor[fg]{titlegraphic}\inserttitlegraphic\par}
+  %\end{centering}
+  %\vfill
+%}
+
+
+%% Part page: GCB
+
+%\defbeamertemplate*{part page}{GCB}[1][]
+%{
+  %\begin{centering}
+    %{\usebeamerfont{part name}\usebeamercolor[fg]{part name}\partname~\insertromanpartnumber}
+    %\vskip1em\par
+    %\begin{beamercolorbox}[sep=8pt,center,#1]{part title}
+      %\usebeamerfont{part title}\insertpart\par
+    %\end{beamercolorbox}
+  %\end{centering}
+%}
+
+
+
+
+
+%% (sub-)section in toc: GCB
+
+%\defbeamertemplate*{section in toc}{GCB}
+%{\inserttocsection\par}
+
+%\defbeamertemplate*{subsection in toc}{GCB}
+%{\leavevmode\leftskip=1.5em\inserttocsubsection\par}
+
+%\defbeamertemplate*{subsubsection in toc}{GCB}
+%{\leavevmode\normalsize\usebeamerfont{subsection in toc}\leftskip=3em%
+  %\usebeamerfont{subsubsection in toc}\inserttocsubsubsection\par}
+
+
+%% (sub-)section in toc shaded, GCB
+
+%\defbeamertemplate*{section in toc shaded}{GCB}[1][20]
+%{\begin{colormixin}{#1!parent.bg}\usebeamertemplate{section in toc}\end{colormixin}\unskip}
+
+%\defbeamertemplate*{subsection in toc shaded}{GCB}[1][20]
+%{\begin{colormixin}{#1!parent.bg}\usebeamertemplate{subsection in toc}\end{colormixin}\unskip}
+
+%\defbeamertemplate*{subsubsection in toc shaded}{GCB}[1][20]
+%{\begin{colormixin}{#1!parent.bg}\usebeamertemplate{subsubsection in toc}\end{colormixin}\unskip}
+
+
+
+%% Alerted text
+
+\defbeamertemplate*{alerted text begin}{GCB}{\setbeamercolor{local structure}{parent=alerted text}}
+
+
+%% Bibliography items
+
+%\defbeamertemplate*{bibliography item}{GCB}
+%{\lower3.5pt\hbox{\hskip2pt\pgfuseimage{beamericonarticle}\hskip1pt}}
+
+%\defbeamertemplate*{bibliography entry article}{GCB}{\par}
+%\defbeamertemplate*{bibliography entry title}{GCB}{\par}
+%\defbeamertemplate*{bibliography entry location}{GCB}{\par}
+%\defbeamertemplate*{bibliography entry note}{GCB}{\par}
+
+
+%\defbeamertemplate*{abstract title}{GCB}
+%{%
+  %\begin{center}%
+    %\abstractname
+  %\end{center}%
+%}
+
+%\defbeamertemplate*{abstract begin}{GCB}
+%{\beamercolorbox[vmode]{abstract}\leftskip2em\rightskip2em plus 1fill\usebeamerfont*{abstract}}
+
+%\defbeamertemplate*{abstract end}{GCB}
+%{\medskip\endbeamercolorbox}
+
+
+%% Verse
+
+%\defbeamertemplate*{verse begin}{GCB}
+%{\beamercolorbox[vmode]{verse}}
+
+%\defbeamertemplate*{verse end}{GCB}
+%{\endbeamercolorbox}
+
+
+%% Quotation
+
+%\defbeamertemplate*{quotation begin}{GCB}
+%{\beamercolorbox[vmode]{quotation}}
+
+%\defbeamertemplate*{quotation end}{GCB}
+%{\endbeamercolorbox}
+
+
+%% Quote
+
+%\defbeamertemplate*{quote begin}{GCB}
+%{\beamercolorbox[vmode]{quote}}
+
+%\defbeamertemplate*{quote end}{GCB}
+%{\endbeamercolorbox}
+
+
+%% Footnotes
+
+%\defbeamertemplate*{footnote}{GCB}
+%{
+  %\parindent 1em\noindent%
+  %\raggedright
+  %\hbox to 1.8em{\hfil\insertfootnotemark}\insertfootnotetext\par%
+%}
+
+
+%% Captions
+
+%\defbeamertemplate*{caption}{GCB}
+%{%
+  %\raggedright
+  %{%
+    %\usebeamercolor[fg]{caption name}%
+    %\usebeamerfont*{caption name}%
+    %\insertcaptionname:%
+  %}
+  %\insertcaption\par
+%}
+
+
+%% Blocks
+
+%\defbeamertemplate*{block begin}{GCB}
+%{
+  %\par\vskip\medskipamount%
+  %\begin{beamercolorbox}[colsep*=.75ex]{block title}
+    %\usebeamerfont*{block title}\insertblocktitle%
+  %\end{beamercolorbox}%
+  %{\parskip0pt\par}%
+  %\ifbeamercolorempty[bg]{block title}
+  %{}
+  %{\ifbeamercolorempty[bg]{block body}{}{\nointerlineskip\vskip-0.5pt}}%
+  %\usebeamerfont{block body}%
+  %\begin{beamercolorbox}[colsep*=.75ex,vmode]{block body}%
+    %\ifbeamercolorempty[bg]{block body}{\vskip-.25ex}{\vskip-.75ex}\vbox{}%
+%}
+%\defbeamertemplate*{block end}{GCB}
+%{\end{beamercolorbox}\vskip\smallskipamount}
+
+%\defbeamertemplate*{block alerted begin}{GCB}
+%{
+  %\par\vskip\medskipamount%
+  %\begin{beamercolorbox}[colsep*=.75ex]{block title alerted}
+    %\usebeamerfont*{block title alerted}\insertblocktitle%
+  %\end{beamercolorbox}%
+  %{\parskip0pt\par}%
+  %\ifbeamercolorempty[bg]{block title alerted}
+  %{}
+  %{\ifbeamercolorempty[bg]{block body alerted}{}{\nointerlineskip\vskip-0.5pt}}%
+  %\usebeamerfont{block body alerted}%
+  %\begin{beamercolorbox}[colsep*=.75ex,vmode]{block body alerted}%
+    %\ifbeamercolorempty[bg]{block body alerted}{\vskip-.25ex}{\vskip-.75ex}\vbox{}%
+%}
+
+%\defbeamertemplate*{block alerted end}{GCB}
+%{\end{beamercolorbox}\vskip\smallskipamount}
+
+
+%\defbeamertemplate*{block example begin}{GCB}
+%{
+  %\par\vskip\medskipamount%
+  %\begin{beamercolorbox}[colsep*=.75ex]{block title example}
+    %\usebeamerfont*{block title example}\insertblocktitle%
+  %\end{beamercolorbox}%
+  %{\parskip0pt\par}%
+  %\ifbeamercolorempty[bg]{block title example}
+  %{}
+  %{\ifbeamercolorempty[bg]{block body example}{}{\nointerlineskip\vskip-0.5pt}}%
+  %\usebeamerfont{block body example}%
+  %\begin{beamercolorbox}[colsep*=.75ex,vmode]{block body example}%
+    %\ifbeamercolorempty[bg]{block body example}{\vskip-.25ex}{\vskip-.75ex}\vbox{}%
+%}
+%\defbeamertemplate*{block example end}{GCB}
+%{\end{beamercolorbox}\vskip\smallskipamount}
+
+
+
+
+%% Theorems
+
+%\defbeamertemplate*{theorem begin}{GCB}
+%{%
+  %\begin{\inserttheoremblockenv}
+  %{%
+    %\inserttheoremname
+    %\ifx\inserttheoremaddition\@empty\else\ (\inserttheoremaddition)\fi%
+  %}%
+%}
+
+%\defbeamertemplate*{theorem end}{GCB}
+%{\end{\inserttheoremblockenv}}
+
+
+%% Proofs
+%\defbeamertemplate*{proof begin}{GCB}
+%{\begin{block}{\insertproofname}}
+
+%\defbeamertemplate*{proof end}{GCB}
+%{\end{block}}
+
+%\defbeamertemplate*{qed symbol}{GCB}
+%{\openbox}
+
+
+
+
+\mode
+<all>
